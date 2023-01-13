@@ -37,7 +37,7 @@ resource "null_resource" "null_copy_ssh" {
         "curl -L https://istio.io/downloadIstio | sh -",
         "cd istio-1.16.1/bin",
         "sudo cp istioctl /usr/bin/",
-        "sudo istioctl install --set profile=demo -y"
+        "sudo istioctl install --set profile=demo -y",
         "sudo kubectl label namespace default istio-injection=enabled"
     ]
   }
