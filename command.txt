@@ -1,0 +1,4 @@
+sudo -i
+kubectl get nodes
+helm create nginx
+helm install nginx ./nginx/ --set service.type=NodePort
